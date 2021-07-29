@@ -9,34 +9,22 @@ include(hunter_download)
 include(hunter_pick_scheme)
 include(hunter_cmake_args)
 
-
 hunter_add_version(
     PACKAGE_NAME
     binaryen
     VERSION
-    1.38.28-p0
+    version_101
     URL
-    "https://github.com/Warchant/binaryen/archive/1.38.28-p0.tar.gz"
+    "https://github.com/soramitsu/binaryen/archive/refs/tags/version_101.tar.gz"
     SHA1
-    6c95a5a46a9e17a04521bb775266f2bae1763287
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    binaryen
-    VERSION
-    1.38.28-p1
-    URL
-    "https://github.com/Warchant/binaryen/archive/1.38.28-p1.tar.gz"
-    SHA1
-    f8ff97ee1e16862e8c88bfea2ffb88247ad65223
+    c8dcb3081d3416587927bcadd66864b7e6e11b26
 )
 
 hunter_cmake_args(
     binaryen
     CMAKE_ARGS
+        BUILD_LLVM_DWARF=OFF
         BUILD_STATIC_LIB=ON
-        BUILD_TOOLS=OFF     # we don't want to build executables by default
         ENABLE_WERROR=OFF   # some new compilers (g++-{7,8}) produce warnings so build may fail. we explicitly disable -Werror
 )
 
