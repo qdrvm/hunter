@@ -15,11 +15,11 @@ hunter_add_version(
     PACKAGE_NAME
     LLVM
     VERSION
-    "12.0.1-p0"
+    "12.0.1-p1"
     URL
-    "https://github.com/sanblch/llvm/archive/v12.0.1-p0.tar.gz"
+    "https://github.com/sanblch/llvm/archive/v12.0.1-p1.tar.gz"
     SHA1
-    9cecfa1823175261e40a0e502b2f677eef3d9c8d
+    33af04396eb2a184aa1dafe2fcb4ab3c7526795b
 )
 
 hunter_add_version(
