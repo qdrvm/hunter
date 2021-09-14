@@ -102,6 +102,7 @@ hunter_add_version(
 hunter_cmake_args(
   LLVM
   CMAKE_ARGS
+    LLVM_ENABLE_ZLIB=OFF
     LLVM_INCLUDE_EXAMPLES=OFF
     LLVM_INCLUDE_TESTS=OFF
     LLVM_INCLUDE_DOCS=OFF
