@@ -13,7 +13,7 @@ hunter_add_version(
     VERSION
     "12.0.1-p0"
     URL
-    "https://github.com/sanblch/clang/archive/v12.0.1-p0.tar.gz"
+    "https://github.com/soramitsu/kagome-clang/archive/v12.0.1-p0.tar.gz"
     SHA1
     b9507482e56b614ad3c92134eb2fc3749a38aaaa
 )

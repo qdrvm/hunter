@@ -17,7 +17,7 @@ hunter_add_version(
     VERSION
     "12.0.1-p1"
     URL
-    "https://github.com/sanblch/llvm/archive/v12.0.1-p1.tar.gz"
+    "https://github.com/soramitsu/kagome-llvm/archive/v12.0.1-p1.tar.gz"
     SHA1
     33af04396eb2a184aa1dafe2fcb4ab3c7526795b
 )
