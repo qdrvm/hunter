@@ -15,6 +15,17 @@ hunter_add_version(
     PACKAGE_NAME
     LLVM
     VERSION
+    "12.0.1-p1"
+    URL
+    "https://github.com/soramitsu/kagome-llvm/archive/v12.0.1-p1.tar.gz"
+    SHA1
+    5c90f60281f73c9a4f8d8927c541e39ee43a04fc
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    LLVM
+    VERSION
     "6.0.1-p0"
     URL
     "https://github.com/hunter-packages/llvm/archive/v6.0.1-p0.tar.gz"
@@ -91,6 +102,7 @@ hunter_add_version(
 hunter_cmake_args(
   LLVM
   CMAKE_ARGS
+    LLVM_ENABLE_ZLIB=OFF
     LLVM_INCLUDE_EXAMPLES=OFF
     LLVM_INCLUDE_TESTS=OFF
     LLVM_INCLUDE_DOCS=OFF
