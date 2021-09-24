@@ -19,7 +19,7 @@ hunter_add_version(
     URL
     "https://github.com/soramitsu/kagome-llvm/archive/v12.0.1-p1.tar.gz"
     SHA1
-    33af04396eb2a184aa1dafe2fcb4ab3c7526795b
+    5c90f60281f73c9a4f8d8927c541e39ee43a04fc
 )
 
 hunter_add_version(

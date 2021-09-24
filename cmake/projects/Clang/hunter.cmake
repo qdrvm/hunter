@@ -15,7 +15,7 @@ hunter_add_version(
     URL
     "https://github.com/soramitsu/kagome-clang/archive/v12.0.1-p0.tar.gz"
     SHA1
-    b9507482e56b614ad3c92134eb2fc3749a38aaaa
+    f290cb45343bc9032823c82b1d021cc02c762acd
 )
 
 hunter_add_version(
