@@ -35,6 +35,7 @@ hunter_add_version(
 hunter_cmake_args(
     binaryen
     CMAKE_ARGS
+        BUILD_LLVM_DWARF=OFF
         BUILD_STATIC_LIB=ON
         BUILD_TOOLS=OFF     # we don't want to build executables by default
         ENABLE_WERROR=OFF   # some new compilers (g++-{7,8}) produce warnings so build may fail. we explicitly disable -Werror
