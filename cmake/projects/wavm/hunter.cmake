@@ -13,11 +13,11 @@ hunter_add_version(
     PACKAGE_NAME
     wavm
     VERSION
-    1.0.1
+    1.0.2
     URL
-    "https://github.com/soramitsu/WAVM/archive/c7dbf7d7af445491bbe7e0b26ea8e4c7b300896a.tar.gz"
+    "https://github.com/soramitsu/WAVM/archive/7efbcced0d41d5f7bc6cd254d624e5f7174b54fc.tar.gz"
     SHA1
-    212fcd111ed718751393e32e24450e739e833c07
+    dd22c11c5faf95a6f6b05ecff18f0e8cab475771
 )
 
 hunter_cmake_args(
