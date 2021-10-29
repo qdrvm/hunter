@@ -37,7 +37,7 @@ set(configure_architectures @CMAKE_OSX_ARCHITECTURES@)
 
 if(NOT configure_architectures)
   hunter_status_debug("Using default macOS architecture: x86_64")
-  set(configure_architectures "x86_64")
+  set(configure_architectures "arm64")
 endif()
 
 # OpenSSL appends the version number differently by version
