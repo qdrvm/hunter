@@ -295,7 +295,8 @@ hunter_cmake_args(
     CMAKE_ARGS
     HUNTER_INSTALL_LICENSE_FILES=${_gtest_license}
     gtest_force_shared_crt=TRUE
-    CMAKE_CXX_FLAGS=-Wno-deprecated-copy
+    CMAKE_CXX_FLAGS+=-Wno-deprecated-copy 
+    CMAKE_CXX_FLAGS+=-Wno-unknown-warning-option
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
