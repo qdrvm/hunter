@@ -5,6 +5,7 @@ cmake_minimum_required(VERSION 3.0)
 project(Hunter)
 
 include(ExternalProject) # ExternalProject_Add
+include(CheckCCompilerFlag)
 
 # Scheme for download and install OpenSSL macOS universal library
 
@@ -31,13 +32,23 @@ hunter_assert_not_empty_string("@HUNTER_GLOBAL_SCRIPT_DIR@")
 hunter_assert_not_empty_string("@HUNTER_TLS_VERIFY@")
 
 # Supported macOS architectures:
-# i386, x86_64, ppc, ppc64
+# i386, x86_64, ppc, ppc64, arm64
 set(configure_command "./Configure")
 set(configure_architectures @CMAKE_OSX_ARCHITECTURES@)
 
 if(NOT configure_architectures)
   hunter_status_debug("Using default macOS architecture: x86_64")
-  set(configure_architectures "x86_64")
+
+  check_c_compiler_flag("-arch x86_64" x86_64Supported)
+  message("x86_64Supported=${x86_64Supported}")
+  check_c_compiler_flag("-arch arm64" arm64Supported)
+  message("arm64Supported=${arm64Supported}")
+
+  if(arm64Supported)
+    set(configure_architectures "arm64")
+  else()
+    set(configure_architectures "x86_64")
+  endif()
 endif()
 
 # OpenSSL appends the version number differently by version
@@ -168,6 +179,8 @@ foreach(arch ${configure_architectures})
     set(configure_arch "darwin-i386-cc")
   elseif("${arch}" STREQUAL "ppc")
     set(configure_arch "darwin-ppc-cc")
+  elseif("${arch}" STREQUAL "arm64")
+    set(configure_arch "darwin64-arm64-cc")
   else()
     hunter_user_error("Could not find the macOS architecture ${arch}. Please update the CMAKE_OSX_ARCHITECTURES option in your toolchain.")
   endif()
