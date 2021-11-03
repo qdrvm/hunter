@@ -15,9 +15,9 @@ hunter_add_version(
     VERSION
     1.0.0
     URL
-    "https://github.com/soramitsu/scale-codec-cpp/archive/68997addc96065c643646ce1c6ff7e36683a051f.tar.gz"
+    "https://github.com/soramitsu/scale-codec-cpp/archive/dba011a9c3ec0af14ddd31ef74c9cbccd958fce3.tar.gz"
     SHA1
-    1b8e17369f9e247e04ea7d26f3fc6247c3908f71
+    796e9b1ab834c38e5bd18761c02d3134338782b7
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
