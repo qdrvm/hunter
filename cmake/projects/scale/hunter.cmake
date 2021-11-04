@@ -17,7 +17,7 @@ hunter_add_version(
     URL
     "https://github.com/soramitsu/scale-codec-cpp/archive/feature/enum-codecs.tar.gz"
     SHA1
-    60fd408f2c356a728b9f530f016b467c85025315
+    bb187c170984be559e48cff12a75fbbc64dd442c
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
