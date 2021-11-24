@@ -15,8 +15,8 @@ hunter_add_version(
     schnorrkel_crust
     VERSION
     1.0.5
-    URL https://github.com/soramitsu/soramitsu-sr25519-crust/archive/152b9f5fdc33c9d081561a92c36578e347cc9732.zip
-    SHA1 444040aa4a5e11f94940995e13eb7c4e4511d6fb
+    URL https://github.com/soramitsu/soramitsu-sr25519-crust/archive/refs/tags/1.0.5.zip
+    SHA1 a083b6a2681c728cb4b4071e27829b7de8d68ab3
 )
 
 hunter_add_version(
