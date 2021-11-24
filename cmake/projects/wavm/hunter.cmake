@@ -13,7 +13,7 @@ hunter_add_version(
     PACKAGE_NAME
     wavm
     VERSION
-    1.0.2
+    1.0.3
     URL
     "https://github.com/soramitsu/WAVM/archive/refs/tags/1.0.3.zip"
     SHA1
