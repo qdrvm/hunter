@@ -20,6 +20,17 @@ hunter_add_version(
     1d9dbcd3f07f14591cb351669eb3801efe9e5038
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    scale
+    VERSION
+    1.0.3
+    URL
+    "https://github.com/soramitsu/scale-codec-cpp/archive/refs/tags/v1.0.3.tar.gz"
+    SHA1
+    be06848e62dc1c6bcac512224e3b3da728f4502b
+)
+
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(scale)
 hunter_download(PACKAGE_NAME scale)
