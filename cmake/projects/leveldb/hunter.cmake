@@ -18,6 +18,12 @@ hunter_add_version(
     URL "https://github.com/hunter-packages/leveldb/archive/v1.22-p0.tar.gz"
     SHA1 "616e3816c0f44423136dcf286ae51417f0d75198")
 
+hunter_add_version(
+    PACKAGE_NAME leveldb
+    VERSION "1.22-s0"
+    URL  "https://github.com/soramitsu/leveldb/archive/a0a3e5ad36437b864d6e5e537fada8ba8dce8ed0.tar.gz"
+    SHA1 "14af25d08099f2140667a0618157b9f86770646c")
+
 hunter_cmake_args(leveldb CMAKE_ARGS
     LEVELDB_BUILD_TESTS=OFF
     LEVELDB_BUILD_BENCHMARKS=OFF)
