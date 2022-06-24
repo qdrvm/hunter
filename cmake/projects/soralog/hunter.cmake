@@ -15,9 +15,9 @@ hunter_add_version(
 
 hunter_add_version(
     PACKAGE_NAME soralog
-    VERSION "0.1.2"
-    URL "https://github.com/soramitsu/soralog/archive/v0.1.2.tar.gz"
-    SHA1 "f3de7b8ef5069b29104216919dfcaa790c0f5e13"
+    VERSION "0.0.10"
+    URL "https://github.com/soramitsu/soralog/archive/v0.0.10.tar.gz"
+    SHA1 "8dd6e0b915ab2ecf85371870b8ed72374c1a3d46"
 )
 
 hunter_cmake_args(
