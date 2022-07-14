@@ -39,7 +39,7 @@ hunter_add_version(
     URL
     "https://github.com/soramitsu/WAVM/archive/refs/heads/uninit-diag.zip"
     SHA1
-    fa7b5dbfbd63a31ccfd90b54c48e624ee64492f9
+    3a9edca3e6a76e51d39ec728b9a26039d8a4d8d7
 )
 
 hunter_cmake_args(
