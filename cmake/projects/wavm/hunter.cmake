@@ -31,6 +31,17 @@ hunter_add_version(
     919aafc29dae892bf4eacd724e7058ad00ca8b8e
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    wavm
+    VERSION
+    1.0.4-r
+    URL
+    "https://github.com/soramitsu/WAVM/archive/refs/heads/uninit-diag.zip"
+    SHA1
+    fa7b5dbfbd63a31ccfd90b54c48e624ee64492f9
+)
+
 hunter_cmake_args(
     wavm
     CMAKE_ARGS
