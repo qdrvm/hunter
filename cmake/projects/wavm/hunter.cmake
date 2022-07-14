@@ -28,7 +28,7 @@ hunter_add_version(
     URL
     "https://github.com/soramitsu/WAVM/archive/refs/tags/1.0.4.zip"
     SHA1
-    919aafc29dae892bf4eacd724e7058ad00ca8b8e
+    0a37ea0c295bf8f484394d83d71c2da54e9ef492
 )
 
 hunter_cmake_args(
