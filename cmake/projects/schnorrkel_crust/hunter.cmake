@@ -10,6 +10,16 @@ include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
 
+
+hunter_add_version(
+    PACKAGE_NAME
+    schnorrkel_crust
+    VERSION
+    1.0.8
+    URL https://github.com/soramitsu/soramitsu-sr25519-crust/archive/62795502ac50b82f3d5a1b084513f6defea002ba.zip
+    SHA1 a4aa4d8c4fe69189d761a7853dae162695fd2bcd
+)
+
 hunter_add_version(
     PACKAGE_NAME
     schnorrkel_crust
