@@ -186,6 +186,17 @@ hunter_add_version(
     SHA1
     53b44f071478789da654b4c33f3f9ef567327c0c)
 
+
+hunter_add_version(
+    PACKAGE_NAME
+    libp2p
+    VERSION
+    0.1.9
+    URL
+    https://github.com/iceseer/cpp-libp2p/archive/5e13b979eaccd9f9dac358a76046af20d70d539c.zip
+    SHA1
+    a1652c25091e8d8d0e6e1cb5305a10bc58a17192)
+
 hunter_cmake_args(
     libp2p
     CMAKE_ARGS
