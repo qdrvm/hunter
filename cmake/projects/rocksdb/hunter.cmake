@@ -35,6 +35,13 @@ hunter_add_version(
     SHA1 "6d908658d8beb1bed850154097cf6bc7d5373580"
 )
 
+hunter_add_version(
+    PACKAGE_NAME rocksdb
+    VERSION 8.0.0
+    URL "https://github.com/facebook/rocksdb/archive/refs/tags/v8.0.0.tar.gz"
+    SHA1 "596e6ce7f14b5fa81b1df04339e173282bb83307"
+)
+
 
 if(MSVC)
     hunter_cmake_args(rocksdb CMAKE_ARGS
