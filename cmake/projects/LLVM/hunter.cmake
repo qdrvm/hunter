@@ -15,6 +15,17 @@ hunter_add_version(
     PACKAGE_NAME
     LLVM
     VERSION
+    "12.0.1-p3"
+    URL
+    "https://github.com/soramitsu/kagome-llvm/archive/v12.0.1-p3.tar.gz"
+    SHA1
+    486730f487c46f84e70c1e3408c3f919f30e7ece
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    LLVM
+    VERSION
     "12.0.1-p2"
     URL
     "https://github.com/soramitsu/kagome-llvm/archive/v12.0.1-p2.tar.gz"
