@@ -29,6 +29,15 @@ hunter_add_version(
     SHA1 b5b860358236011c92a6c7f6134d12199f0a5818
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    erasure_coding_crust
+    VERSION
+    0.0.3
+    URL https://github.com/soramitsu/erasure-coding-crust/archive/refs/tags/v0.0.3.zip
+    SHA1 f8084f0a0de3d584ea2938803ca869aefa31ba10
+)
+
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(erasure_coding_crust)
 hunter_download(PACKAGE_NAME erasure_coding_crust)
