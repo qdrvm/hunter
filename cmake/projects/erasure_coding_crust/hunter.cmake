@@ -15,6 +15,15 @@ hunter_add_version(
     PACKAGE_NAME
     erasure_coding_crust
     VERSION
+    0.0.4
+    URL https://github.com/soramitsu/erasure-coding-crust/archive/refs/tags/v0.0.4.zip
+    SHA1 79cadfffaa530943d0c3fe2cb6125fd01510b664
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    erasure_coding_crust
+    VERSION
     0.0.1
     URL https://github.com/soramitsu/erasure-coding-crust/archive/refs/tags/v0.0.1.zip
     SHA1 a3ed370ab594726d7d1581ed1e10adf48365005d
