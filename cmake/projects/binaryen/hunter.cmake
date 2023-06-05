@@ -14,6 +14,17 @@ hunter_add_version(
     PACKAGE_NAME
     binaryen
     VERSION
+    version_100
+    URL
+    "https://github.com/WebAssembly/binaryen/archive/refs/tags/version_100.zip"
+    SHA1
+    7e2218ea9b30424ddecf7b82479f76b9dd25ebdb
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    binaryen
+    VERSION
     1.38.28-p0
     URL
     "https://github.com/Warchant/binaryen/archive/1.38.28-p0.tar.gz"
