@@ -32,6 +32,17 @@ hunter_add_version(
     f8ff97ee1e16862e8c88bfea2ffb88247ad65223
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    binaryen
+    VERSION
+    1.38.28-patch.1
+    URL
+    "https://github.com/soramitsu/binaryen/archive/refs/tags/1.38.28-patch.1.zip"
+    SHA1
+    ff287b5fca707f812e9d6dd70f6e45658536f179
+)
+
 hunter_cmake_args(
     binaryen
     CMAKE_ARGS

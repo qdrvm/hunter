@@ -16,8 +16,8 @@ hunter_add_version(
     schnorrkel_crust
     VERSION
     1.0.10
-    URL https://github.com/soramitsu/soramitsu-sr25519-crust/archive/refs/heads/test/assert.zip
-    SHA1 c17a2bff8e0a8aa8c52a912c5fb77f4dbecdc1c4
+    URL https://github.com/soramitsu/soramitsu-sr25519-crust/archive/8c93ec4234b2246bc0b787f8865cf083b2b8d409.zip
+    SHA1 64df9de56e18bf6b41d6daba7c822d9e86c2b801
 )
 
 hunter_add_version(
