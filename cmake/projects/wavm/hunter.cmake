@@ -64,6 +64,17 @@ hunter_add_version(
     81eeb8c5201dfa58459e3622deea279fcbd1a92b
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    wavm
+    VERSION
+    1.0.8
+    URL
+    "https://github.com/soramitsu/WAVM/archive/refs/tags/1.0.8.zip"
+    SHA1
+    d29b2e1765533dc487aa6e10820c358abde6d724
+)
+
 hunter_cmake_args(
     wavm
     CMAKE_ARGS
