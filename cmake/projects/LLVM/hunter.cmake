@@ -17,7 +17,7 @@ hunter_add_version(
     VERSION
     "12.0.1-p3"
     URL
-    "https://github.com/soramitsu/kagome-llvm/archive/v12.0.1-p3.tar.gz"
+    "https://github.com/qdrvm/kagome-llvm/archive/v12.0.1-p3.tar.gz"
     SHA1
     486730f487c46f84e70c1e3408c3f919f30e7ece
 )
@@ -28,7 +28,7 @@ hunter_add_version(
     VERSION
     "12.0.1-p2"
     URL
-    "https://github.com/soramitsu/kagome-llvm/archive/v12.0.1-p2.tar.gz"
+    "https://github.com/qdrvm/kagome-llvm/archive/v12.0.1-p2.tar.gz"
     SHA1
     10239d9e12bc924e01237655b4cd84c50e0d8a64
 )
@@ -39,7 +39,7 @@ hunter_add_version(
     VERSION
     "12.0.1-p1"
     URL
-    "https://github.com/soramitsu/kagome-llvm/archive/v12.0.1-p1.tar.gz"
+    "https://github.com/qdrvm/kagome-llvm/archive/v12.0.1-p1.tar.gz"
     SHA1
     5c90f60281f73c9a4f8d8927c541e39ee43a04fc
 )
