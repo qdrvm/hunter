@@ -38,7 +38,7 @@ hunter_add_version(
     VERSION
     1.38.28-patch.1
     URL
-    "https://github.com/soramitsu/binaryen/archive/refs/tags/1.38.28-patch.1.zip"
+    "https://github.com/qdrvm/binaryen/archive/refs/tags/1.38.28-patch.1.zip"
     SHA1
     ff287b5fca707f812e9d6dd70f6e45658536f179
 )

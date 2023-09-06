@@ -16,7 +16,7 @@ hunter_add_version(
     VERSION
     1.1.0
     URL
-    "https://github.com/soramitsu/soramitsu-boost-di/archive/a20eebb6decfba55867a6920e00443a9485f50cd.tar.gz"
+    "https://github.com/qdrvm/boost-di/archive/a20eebb6decfba55867a6920e00443a9485f50cd.tar.gz"
     SHA1
     3c02cffc9b1bc0e7ddf5e226723dfd5a862ad247
 )

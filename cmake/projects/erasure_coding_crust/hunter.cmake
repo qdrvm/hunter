@@ -16,7 +16,7 @@ hunter_add_version(
     erasure_coding_crust
     VERSION
     0.0.1
-    URL https://github.com/soramitsu/erasure-coding-crust/archive/refs/tags/v0.0.1.zip
+    URL https://github.com/qdrvm/erasure-coding-crust/archive/refs/tags/v0.0.1.zip
     SHA1 a3ed370ab594726d7d1581ed1e10adf48365005d
 )
 
@@ -25,7 +25,7 @@ hunter_add_version(
     erasure_coding_crust
     VERSION
     0.0.2
-    URL https://github.com/soramitsu/erasure-coding-crust/archive/refs/tags/v0.0.2.zip
+    URL https://github.com/qdrvm/erasure-coding-crust/archive/refs/tags/v0.0.2.zip
     SHA1 b5b860358236011c92a6c7f6134d12199f0a5818
 )
 
@@ -34,7 +34,7 @@ hunter_add_version(
     erasure_coding_crust
     VERSION
     0.0.3
-    URL https://github.com/soramitsu/erasure-coding-crust/archive/refs/tags/v0.0.3.zip
+    URL https://github.com/qdrvm/erasure-coding-crust/archive/refs/tags/v0.0.3.zip
     SHA1 f8084f0a0de3d584ea2938803ca869aefa31ba10
 )
 
@@ -43,7 +43,7 @@ hunter_add_version(
     erasure_coding_crust
     VERSION
     0.0.4
-    URL https://github.com/soramitsu/erasure-coding-crust/archive/refs/tags/v0.0.4.zip
+    URL https://github.com/qdrvm/erasure-coding-crust/archive/refs/tags/v0.0.4.zip
     SHA1 79cadfffaa530943d0c3fe2cb6125fd01510b664
 )
 
@@ -52,7 +52,7 @@ hunter_add_version(
     erasure_coding_crust
     VERSION
     0.0.5
-    URL https://github.com/soramitsu/erasure-coding-crust/archive/refs/tags/v0.0.5.zip
+    URL https://github.com/qdrvm/erasure-coding-crust/archive/refs/tags/v0.0.5.zip
     SHA1 d306a2118920bccf6734c54772594a10b004d477
 )
 
@@ -61,7 +61,7 @@ hunter_add_version(
     erasure_coding_crust
     VERSION
     0.0.6
-    URL https://github.com/soramitsu/erasure-coding-crust/archive/refs/tags/v0.0.6.zip
+    URL https://github.com/qdrvm/erasure-coding-crust/archive/refs/tags/v0.0.6.zip
     SHA1 229c5566eb3a0a8c236faf14e4881f277ccd8a9c
 )
 
