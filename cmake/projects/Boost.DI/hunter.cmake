@@ -18,7 +18,7 @@ hunter_add_version(
     URL
     "https://github.com/qdrvm/boost-di/archive/a20eebb6decfba55867a6920e00443a9485f50cd.tar.gz"
     SHA1
-    3c02cffc9b1bc0e7ddf5e226723dfd5a862ad247
+    f6f59cb4cf3b586d6985e361ec762a307428ff29
 )
 
 hunter_cmake_args(
