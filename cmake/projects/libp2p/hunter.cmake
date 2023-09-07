@@ -230,7 +230,7 @@ hunter_add_version(
     PACKAGE_NAME
     libp2p
     VERSION
-    0.1.12
+    0.1.13
     URL
     https://github.com/libp2p/cpp-libp2p/archive/refs/tags/v0.1.13.tar.gz
     SHA1
