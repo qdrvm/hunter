@@ -27,6 +27,13 @@ hunter_add_version(
     SHA1 "88664218fc6430ed8d782aaeec665b43ec10c702"
 )
 
+hunter_add_version(
+    PACKAGE_NAME soralog
+    VERSION 0.2.0
+    URL  https://github.com/qdrvm/soralog/archive/refs/tags/v0.2.0.tar.gz
+    SHA1 8caa7e781f7553155db9bcaadfec99e3f44d063e
+)
+
 hunter_cmake_args(
     soralog
     CMAKE_ARGS
