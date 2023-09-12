@@ -107,6 +107,17 @@ hunter_add_version(
     dc59b27d461f1af12daf73f3e00d18bf1e9eed78
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    fmt
+    VARSION
+    10.1.1
+    URL
+    https://github.com/fmtlib/fmt/archive/refs/tags/10.1.1.tar.gz
+    SHA1
+    e94b38a9efe0d696373a3cb1300dd24f12e2dd9c
+)
+
 hunter_cmake_args(
     fmt
     CMAKE_ARGS
