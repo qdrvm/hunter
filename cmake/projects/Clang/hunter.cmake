@@ -11,6 +11,17 @@ hunter_add_version(
     PACKAGE_NAME
     Clang
     VERSION
+    "17.0.1-p0"
+    URL
+    "https://github.com/qdrvm/kagome-clang/archive/v17.0.1-p0.tar.gz"
+    SHA1
+    080f4a67f0b383e3479a58495535c7bbc590018c
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Clang
+    VERSION
     "12.0.1-p0"
     URL
     "https://github.com/qdrvm/kagome-clang/archive/v12.0.1-p0.tar.gz"

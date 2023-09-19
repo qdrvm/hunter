@@ -12,6 +12,17 @@ hunter_add_version(
     PACKAGE_NAME
     Libcxx
     VERSION
+    "17.0.1"
+    URL
+    "https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/libcxx-17.0.1.src.tar.xz"
+    SHA1
+    a7f74eb0d0c1b1ac9b558a8a4be79ba39ed15051
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Libcxx
+    VERSION
     "3.6.0"
     URL
     "http://llvm.org/releases/3.6.0/libcxx-3.6.0.src.tar.xz"

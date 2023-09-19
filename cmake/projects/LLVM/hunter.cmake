@@ -15,44 +15,22 @@ hunter_add_version(
     PACKAGE_NAME
     LLVM
     VERSION
+    "17.0.1-p0"
+    URL
+    "https://github.com/qdrvm/kagome-llvm/archive/v17.0.1-p0.tar.gz"
+    SHA1
+    fc4f813b7148a93db06952d9a89d27d31d479869
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    LLVM
+    VERSION
     "12.0.1-p3"
     URL
     "https://github.com/qdrvm/kagome-llvm/archive/v12.0.1-p3.tar.gz"
     SHA1
     486730f487c46f84e70c1e3408c3f919f30e7ece
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    LLVM
-    VERSION
-    "12.0.1-p2"
-    URL
-    "https://github.com/qdrvm/kagome-llvm/archive/v12.0.1-p2.tar.gz"
-    SHA1
-    10239d9e12bc924e01237655b4cd84c50e0d8a64
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    LLVM
-    VERSION
-    "12.0.1-p1"
-    URL
-    "https://github.com/qdrvm/kagome-llvm/archive/v12.0.1-p1.tar.gz"
-    SHA1
-    5c90f60281f73c9a4f8d8927c541e39ee43a04fc
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    LLVM
-    VERSION
-    "6.0.1-p0"
-    URL
-    "https://github.com/hunter-packages/llvm/archive/v6.0.1-p0.tar.gz"
-    SHA1
-    0942eedb9f349f3de7c483600de026192cc9e3ee
 )
 
 hunter_add_version(

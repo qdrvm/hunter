@@ -50,8 +50,8 @@ hunter_default_version(CLI11 VERSION 1.8.0)
 hunter_default_version(CURL VERSION 7.60.0-p2)
 hunter_default_version(CapnProto VERSION 0.7.0)
 hunter_default_version(Catch VERSION 2.11.0)
-hunter_default_version(Clang VERSION 12.0.1-p0)
-hunter_default_version(ClangToolsExtra VERSION 12.0.1) # Clang
+hunter_default_version(Clang VERSION 17.0.1-p0) # Clang
+hunter_default_version(ClangToolsExtra VERSION 17.0.1) # Clang
 hunter_default_version(Comet VERSION 4.0.2)
 hunter_default_version(CppNetlib VERSION 0.10.1-hunter-3)
 hunter_default_version(CppNetlibUri VERSION 1.0.5-hunter)
@@ -84,14 +84,14 @@ hunter_default_version(Immer VERSION 0.6.2-cf44615)
 hunter_default_version(Jpeg VERSION 9c-p0)
 hunter_default_version(JsonSpirit VERSION 0.0.4-hunter)
 hunter_default_version(LAPACK VERSION 3.7.1)
-hunter_default_version(LLVM VERSION 12.0.1-p3) # Clang
-hunter_default_version(LLVMCompilerRT VERSION 12.0.1) # Clang
+hunter_default_version(LLVM VERSION 17.0.1-p0) # Clang
+hunter_default_version(LLVMCompilerRT VERSION 17.0.1) # Clang
 hunter_default_version(Lager VERSION 0.0.0-dbc1fde-p0)
 hunter_default_version(Leathers VERSION 0.1.8)
 hunter_default_version(Leptonica VERSION 1.74.2-p4)
 hunter_default_version(LibCDS VERSION 2.3.1)
-hunter_default_version(Libcxx VERSION 3.6.2) # Clang
-hunter_default_version(Libcxxabi VERSION 3.6.2) # Clang
+hunter_default_version(Libcxx VERSION 17.0.1) # Clang
+hunter_default_version(Libcxxabi VERSION 17.0.1) # Clang
 hunter_default_version(Libevent VERSION 2.1.8-p4)
 hunter_default_version(Libssh2 VERSION 1.7.0)
 hunter_default_version(LodePNG VERSION 0.0.0-p1)
