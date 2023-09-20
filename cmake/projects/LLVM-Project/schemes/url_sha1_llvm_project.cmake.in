@@ -1,0 +1,224 @@
+# Copyright (c) 2013, 2015-2016 Ruslan Baratov, Alexandre Pretyman
+# All rights reserved.
+
+cmake_minimum_required(VERSION 3.0)
+project(Hunter)
+
+include(ExternalProject) # ExternalProject_Add
+
+include("@HUNTER_SELF@/cmake/Hunter")
+
+include(hunter_internal_error)
+include(hunter_report_broken_package)
+include(hunter_status_debug)
+include(hunter_assert_not_empty_string)
+
+hunter_status_debug("Scheme: url_sha1_llvm_project")
+
+# Check preconditions
+hunter_assert_not_empty_string("@HUNTER_SELF@")
+hunter_assert_not_empty_string("@HUNTER_EP_NAME@")
+hunter_assert_not_empty_string("@HUNTER_PACKAGE_URL@")
+hunter_assert_not_empty_string("@HUNTER_PACKAGE_SHA1@")
+hunter_assert_not_empty_string("@HUNTER_PACKAGE_COMPONENT@")
+hunter_assert_not_empty_string("@HUNTER_PACKAGE_DOWNLOAD_DIR@")
+hunter_assert_not_empty_string("@HUNTER_PACKAGE_BUILD_DIR@")
+hunter_assert_not_empty_string("@HUNTER_PACKAGE_CONFIGURATION_TYPES@")
+hunter_assert_not_empty_string("@HUNTER_CONFIG_ID_PATH@")
+hunter_assert_not_empty_string("@HUNTER_INSTALL_PREFIX@")
+hunter_assert_not_empty_string("@HUNTER_PACKAGE_INSTALL_PREFIX@")
+hunter_assert_not_empty_string("@HUNTER_PACKAGE_LICENSE_DIR@")
+hunter_assert_not_empty_string("@HUNTER_LLVM_PROJECT_VERSION@")
+hunter_assert_not_empty_string("@HUNTER_PACKAGE_SETUP_DIR@")
+hunter_assert_not_empty_string("@HUNTER_GLOBAL_SCRIPT_DIR@")
+hunter_assert_not_empty_string("@HUNTER_TLS_VERIFY@")
+
+set(HUNTER_LLVM_PROJECT_VERSION "@HUNTER_LLVM_PROJECT_VERSION@")
+
+if("@MSVC@")
+  hunter_assert_not_empty_string("@HUNTER_MSVC_ARCH@")
+  hunter_assert_not_empty_string("@HUNTER_MSVC_VCVARSALL@")
+  hunter_assert_not_empty_string("@HUNTER_MSVC_YEAR@")
+endif()
+
+if("@MSVC@")
+  set(env_cmd "@HUNTER_MSVC_VCVARSALL@" "@HUNTER_MSVC_ARCH@")
+  hunter_status_debug("Environment command: ${env_cmd}")
+else()
+  # Workaround for: http://public.kitware.com/Bug/view.php?id=15567
+  set(env_cmd "@CMAKE_COMMAND@" -E echo "configure")
+endif()
+
+if(WIN32)
+  set(configure_command "configure.bat")
+else()
+  set(configure_command "./configure")
+endif()
+
+set(configure_opts)
+
+list(APPEND
+    configure_opts
+      -confirm-license
+      -nomake examples
+      -nomake tests
+)
+
+set(HUNTER_PATCH_LLVM_PROJECT_MACX_CLANG FALSE)
+set(HUNTER_LLVM_PROJECT_OS_IS_LINUX FALSE)
+
+string(COMPARE EQUAL "@CMAKE_SYSTEM_NAME@" "Linux" _is_linux)
+string(COMPARE EQUAL "@CMAKE_SYSTEM_NAME@" "Darwin" _is_darwin)
+
+if(HUNTER_STATUS_DEBUG AND NOT WIN32)
+  list(APPEND configure_opts "-verbose")
+endif()
+
+if(BUILD_SHARED_LIBS)
+  list(APPEND configure_opts "-shared")
+else()
+  list(APPEND configure_opts "-static")
+endif()
+
+list(APPEND configure_opts "-prefix" "@HUNTER_PACKAGE_INSTALL_PREFIX@")
+
+### Configuration type --
+
+set(cfg "@HUNTER_PACKAGE_CONFIGURATION_TYPES@")
+
+string(COMPARE EQUAL "${cfg}" "Release" is_release)
+string(COMPARE EQUAL "${cfg}" "Debug" is_debug)
+string(COMPARE EQUAL "${cfg}" "Release;Debug" is_str_release_debug)
+string(COMPARE EQUAL "${cfg}" "Debug;Release" is_str_debug_release)
+
+if(is_str_release_debug OR is_str_debug_release)
+  set(is_release_debug TRUE)
+else()
+  set(is_release_debug FALSE)
+endif()
+
+if(is_release)
+  list(APPEND configure_opts "-release")
+elseif(is_debug)
+  list(APPEND configure_opts "-debug")
+elseif(is_release_debug)
+  list(APPEND configure_opts "-debug-and-release")
+else()
+  hunter_user_error("LLVM-Project configuration type `${cfg}` is not supported")
+endif()
+
+### -- end
+
+hunter_status_debug("LLVM-Project configure options (without -skip): ${configure_opts}")
+
+list(APPEND configure_command ${configure_opts})
+
+set(llvm_project_component "@HUNTER_PACKAGE_COMPONENT@")
+set(hunter_self "@HUNTER_SELF@")
+set(global_install_dir "@HUNTER_INSTALL_PREFIX@")
+set(local_install_dir "@HUNTER_PACKAGE_INSTALL_PREFIX@")
+
+set(build_opts)
+string(COMPARE NOTEQUAL "@HUNTER_JOBS_OPTION@" "" have_jobs)
+if(have_jobs AND NOT "@MSVC_IDE@")
+  list(APPEND build_opts "-j" "@HUNTER_JOBS_OPTION@")
+endif()
+
+set(
+    llvm_project_source_dir
+    "@HUNTER_CONFIG_ID_PATH@/LlvmProjectBuild/@HUNTER_PACKAGE_INTERNAL_DEPS_ID@"
+)
+
+configure_file(
+    "@HUNTER_PACKAGE_SETUP_DIR@/ep-stages/llvm_project-configure.cmake.in"
+    "@HUNTER_PACKAGE_BUILD_DIR@/llvm_project-configure.cmake"
+    @ONLY
+)
+
+configure_file(
+    "@HUNTER_PACKAGE_SETUP_DIR@/ep-stages/llvm_project-install.cmake.in"
+    "@HUNTER_PACKAGE_BUILD_DIR@/llvm_project-install.cmake"
+    @ONLY
+)
+
+configure_file(
+    "@HUNTER_PACKAGE_SETUP_DIR@/ep-stages/llvm_project-build.cmake.in"
+    "@HUNTER_PACKAGE_BUILD_DIR@/llvm_project-build.cmake"
+    @ONLY
+)
+
+# This file created after archive with sources successfully
+# downloaded and unpacked
+if(EXISTS "${llvm_project_source_dir}/llvm_project-configure.cmake")
+  set(download_step DOWNLOAD_COMMAND "@CMAKE_COMMAND@" -E echo "skip download")
+else()
+  set(download_step)
+endif()
+
+if("@HUNTER_PACKAGE_LOG_BUILD@")
+  set(log_build 1)
+else()
+  set(log_build 0)
+endif()
+
+if("@HUNTER_PACKAGE_LOG_INSTALL@")
+  set(log_install 1)
+else()
+  set(log_install 0)
+endif()
+
+ExternalProject_Add(
+    "@HUNTER_EP_NAME@"
+    URL
+    @HUNTER_PACKAGE_URL@
+    URL_HASH
+    SHA1=@HUNTER_PACKAGE_SHA1@
+    DOWNLOAD_DIR
+    "@HUNTER_PACKAGE_DOWNLOAD_DIR@"
+    TLS_VERIFY
+    "@HUNTER_TLS_VERIFY@"
+    SOURCE_DIR
+    "${llvm_project_source_dir}"
+    INSTALL_DIR
+    "@HUNTER_PACKAGE_INSTALL_PREFIX@"
+        # not used, just avoid creating Install/<name> empty directory
+    ${download_step}
+    CONFIGURE_COMMAND
+    ${env_cmd}
+    COMMAND
+        "@CMAKE_COMMAND@"
+        -E copy
+        "@HUNTER_PACKAGE_BUILD_DIR@/llvm_project-configure.cmake"
+        "${llvm_project_source_dir}/llvm_project-configure.cmake"
+    COMMAND
+        "@CMAKE_COMMAND@" -P "${llvm_project_source_dir}/llvm_project-configure.cmake"
+    BUILD_COMMAND
+    ${env_cmd}
+    COMMAND
+        "@CMAKE_COMMAND@"
+        -E copy
+        "@HUNTER_PACKAGE_BUILD_DIR@/llvm_project-build.cmake"
+        "${llvm_project_source_dir}/llvm_project-build.cmake"
+    COMMAND
+        "@CMAKE_COMMAND@" -P "${llvm_project_source_dir}/llvm_project-build.cmake"
+    BUILD_IN_SOURCE
+    1
+    INSTALL_COMMAND
+    ${env_cmd}
+    COMMAND
+        "@CMAKE_COMMAND@"
+        -E copy
+        "@HUNTER_PACKAGE_BUILD_DIR@/llvm_project-install.cmake"
+        "${llvm_project_source_dir}/llvm_project-install.cmake"
+    COMMAND
+        "@CMAKE_COMMAND@" -P "${llvm_project_source_dir}/llvm_project-install.cmake"
+    COMMAND # Copy license files
+        "@CMAKE_COMMAND@"
+        "-C@HUNTER_ARGS_FILE@" # for 'HUNTER_INSTALL_LICENSE_FILES'
+        "-Dsrcdir=@HUNTER_PACKAGE_SOURCE_DIR@"
+        "-Ddstdir=@HUNTER_PACKAGE_LICENSE_DIR@"
+        -P
+        "@HUNTER_SELF@/scripts/try-copy-license.cmake"
+    LOG_BUILD ${log_build}
+    LOG_INSTALL ${log_install}
+)

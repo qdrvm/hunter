@@ -1,0 +1,30 @@
+cmake_minimum_required(VERSION 3.0)
+
+### Input params check
+
+string(COMPARE EQUAL "@hunter_self@" "" is_empty)
+if(is_empty)
+  message(FATAL_ERROR "hunter_self is empty")
+endif()
+
+string(COMPARE EQUAL "@global_install_dir@" "" is_empty)
+if(is_empty)
+  message(FATAL_ERROR "global_install_dir is empty")
+endif()
+
+include("@hunter_self@/scripts/clear-all.cmake")
+set(build_command make)
+
+if("@HUNTER_LLVM_PROJECT_OS_IS_LINUX@")
+  set(x "@global_install_dir@/share/pkgconfig")
+  set(y "@global_install_dir@/lib/pkgconfig")
+  set(ENV{PKG_CONFIG_PATH} "${x}:${y}")
+
+  set(ENV{LD_LIBRARY_PATH} "@global_install_dir@/lib")
+endif()
+
+execute_process(COMMAND ${build_command} @build_opts@ RESULT_VARIABLE result)
+
+if(NOT result EQUAL 0)
+  message(FATAL_ERROR "LLVM-Project build failed: ${result}")
+endif()
