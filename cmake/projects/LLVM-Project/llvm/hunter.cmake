@@ -7,7 +7,7 @@ hunter_pick_scheme(DEFAULT url_sha1_llvm_project)
 
 hunter_download(
     PACKAGE_NAME              LLVM-Project
-    PACKAGE_COMPONENT         @llvm_project_component@
+    PACKAGE_COMPONENT         llvm
     PACKAGE_INTERNAL_DEPS_ID "48"
 )
 
