@@ -12,113 +12,38 @@ include(hunter_pick_scheme)
 include(hunter_report_broken_package)
 
 hunter_add_version(
-    PACKAGE_NAME
-    LLVM
-    VERSION
-    "12.0.1-p3"
-    URL
-    "https://github.com/qdrvm/kagome-llvm/archive/v12.0.1-p3.tar.gz"
-    SHA1
-    486730f487c46f84e70c1e3408c3f919f30e7ece
+    PACKAGE_NAME LLVM
+    VERSION      12.0.1-p4
+    URL  https://github.com/qdrvm/kagome-llvm/archive/refs/tags/v12.0.1-p4.tar.gz
+    SHA1 3c4c5700710fc0e33d3548fce6041ff85f06b960
 )
 
 hunter_add_version(
-    PACKAGE_NAME
-    LLVM
-    VERSION
-    "12.0.1-p2"
-    URL
-    "https://github.com/qdrvm/kagome-llvm/archive/v12.0.1-p2.tar.gz"
-    SHA1
-    10239d9e12bc924e01237655b4cd84c50e0d8a64
+    PACKAGE_NAME LLVM
+    VERSION      12.0.1-p3
+    URL  https://github.com/qdrvm/kagome-llvm/archive/v12.0.1-p3.tar.gz
+    SHA1 486730f487c46f84e70c1e3408c3f919f30e7ece
 )
 
 hunter_add_version(
-    PACKAGE_NAME
-    LLVM
-    VERSION
-    "12.0.1-p1"
-    URL
-    "https://github.com/qdrvm/kagome-llvm/archive/v12.0.1-p1.tar.gz"
-    SHA1
-    5c90f60281f73c9a4f8d8927c541e39ee43a04fc
+    PACKAGE_NAME LLVM
+    VERSION      12.0.1-p3
+    URL  https://github.com/qdrvm/kagome-llvm/archive/v12.0.1-p2.tar.gz
+    SHA1 10239d9e12bc924e01237655b4cd84c50e0d8a64
 )
 
 hunter_add_version(
-    PACKAGE_NAME
-    LLVM
-    VERSION
-    "6.0.1-p0"
-    URL
-    "https://github.com/hunter-packages/llvm/archive/v6.0.1-p0.tar.gz"
-    SHA1
-    0942eedb9f349f3de7c483600de026192cc9e3ee
+    PACKAGE_NAME LLVM
+    VERSION      12.0.1-p1
+    URL  https://github.com/qdrvm/kagome-llvm/archive/v12.0.1-p1.tar.gz
+    SHA1 5c90f60281f73c9a4f8d8927c541e39ee43a04fc
 )
 
 hunter_add_version(
-    PACKAGE_NAME
-    LLVM
-    VERSION
-    "4.0.1-p0"
-    URL
-    "https://github.com/hunter-packages/llvm/archive/v4.0.1-p0.tar.gz"
-    SHA1
-    fd70af82551d3a693c4270d71e994b810f33f593
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    LLVM
-    VERSION
-    "3.6.2-p0"
-    URL
-    "https://github.com/hunter-packages/llvm/archive/v3.6.2-p0.tar.gz"
-    SHA1
-    81eed993cbbc7243597a4b16d2e371618156396b
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    LLVM
-    VERSION
-    "3.6.2"
-    URL
-    "http://llvm.org/releases/3.6.2/llvm-3.6.2.src.tar.xz"
-    SHA1
-    7a00257eb2bc9431e4c77c3a36b033072c54bc7e
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    LLVM
-    VERSION
-    "3.6.0"
-    URL
-    "http://llvm.org/releases/3.6.0/llvm-3.6.0.src.tar.xz"
-    SHA1
-    6eb2b7381d924bb3f267281c9058c817d825d824
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    LLVM
-    VERSION
-    "3.5.0"
-    URL
-    "http://llvm.org/releases/3.5.0/llvm-3.5.0.src.tar.xz"
-    SHA1
-    58d817ac2ff573386941e7735d30702fe71267d5
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    LLVM
-    VERSION
-    "3.4.2"
-    URL
-    "http://llvm.org/releases/3.4.2/llvm-3.4.2.src.tar.gz"
-    SHA1
-    c5287384d0b95ecb0fd7f024be2cdfb60cd94bc9
+    PACKAGE_NAME LLVM
+    VERSION      6.0.1-p0
+    URL  https://github.com/hunter-packages/llvm/archive/v6.0.1-p0.tar.gz
+    SHA1 0942eedb9f349f3de7c483600de026192cc9e3ee
 )
 
 hunter_cmake_args(

@@ -84,7 +84,7 @@ hunter_default_version(Immer VERSION 0.6.2-cf44615)
 hunter_default_version(Jpeg VERSION 9c-p0)
 hunter_default_version(JsonSpirit VERSION 0.0.4-hunter)
 hunter_default_version(LAPACK VERSION 3.7.1)
-hunter_default_version(LLVM VERSION 12.0.1-p3) # Clang
+hunter_default_version(LLVM VERSION 12.0.1-p4) # Clang
 hunter_default_version(LLVMCompilerRT VERSION 12.0.1) # Clang
 hunter_default_version(Lager VERSION 0.0.0-dbc1fde-p0)
 hunter_default_version(Leathers VERSION 0.1.8)
@@ -531,7 +531,7 @@ hunter_default_version(uuid VERSION 1.0.3)
 hunter_default_version(v8 VERSION 7.4.98-p3)
 hunter_default_version(vectorial VERSION 0.0.0-ae7dc88-p0)
 hunter_default_version(vorbis VERSION 1.3.6-p1)
-hunter_default_version(wavm VERSION 1.0.12)
+hunter_default_version(wavm VERSION 1.0.13)
 hunter_default_version(websocketpp VERSION 0.8.1-p0)
 hunter_default_version(wt VERSION 4.0.4-p0)
 hunter_default_version(wxWidgets VERSION 3.0.2)
