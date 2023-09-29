@@ -25,9 +25,9 @@ hunter_add_version(
 
 hunter_add_version(
     PACKAGE_NAME wavm
-    VERSION      1.0.13
-    URL  https://github.com/qdrvm/WAVM/archive/refs/tags/1.0.13.tar.gz
-    SHA1 524302962934f49d09247d705fd00b0548364102
+    VERSION      1.0.14
+    URL  https://github.com/qdrvm/WAVM/archive/refs/tags/1.0.14.tar.gz
+    SHA1 9388a0b7054f3300ac0f5bf4523bcb08fea7ea16
 )
 
 hunter_cmake_args(
