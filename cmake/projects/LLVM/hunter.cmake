@@ -57,6 +57,10 @@ hunter_add_version(
     SHA1 0942eedb9f349f3de7c483600de026192cc9e3ee
 )
 
+if(HUNTER_LLVM_VERSION VERSION_GREATER 15.0.1)
+    hunter_source_subdir(LLVM SOURCE_SUBDIR llvm)
+endif()
+
 hunter_cmake_args(
   LLVM
   CMAKE_ARGS
