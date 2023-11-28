@@ -84,6 +84,7 @@ hunter_default_version(Immer VERSION 0.6.2-cf44615)
 hunter_default_version(Jpeg VERSION 9c-p0)
 hunter_default_version(JsonSpirit VERSION 0.0.4-hunter)
 hunter_default_version(LAPACK VERSION 3.7.1)
+hunter_default_version(LLD VERSION 16.0.1)
 hunter_default_version(LLVM VERSION 12.0.1-p4) # Clang
 hunter_default_version(LLVMCompilerRT VERSION 12.0.1) # Clang
 hunter_default_version(Lager VERSION 0.0.0-dbc1fde-p0)
