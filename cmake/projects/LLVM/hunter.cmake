@@ -10,6 +10,7 @@ include(hunter_configuration_types)
 include(hunter_download)
 include(hunter_pick_scheme)
 include(hunter_report_broken_package)
+include(hunter_source_subdir)
 
 hunter_add_version(
     PACKAGE_NAME
