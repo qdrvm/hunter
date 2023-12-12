@@ -17,7 +17,7 @@ hunter_add_version(
     URL
     "https://github.com/harrm/WasmEdge/archive/refs/tags/0.13.3-qdrvm1.zip"
     SHA1
-    b02234c1e2fb40ed35c7df8cc92907617f9087e0
+    2b20b866d36cfcd37b8d0ee6167b27eba6c35d32
 )
 
 hunter_cmake_args(
