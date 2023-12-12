@@ -15,14 +15,10 @@ hunter_add_version(
     VERSION
     0.13.3
     URL
-    "https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.3.zip"
+    "https://github.com/harrm/WasmEdge/archive/refs/tags/0.13.3-qdrvm1.zip"
     SHA1
-    f733538b806025c09fabc7d3f5e4f49338c41e70
+    b02234c1e2fb40ed35c7df8cc92907617f9087e0
 )
-
-if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CMAKE_CXX_COMPILER_VERSION VERSION_GREATER_EQUAL "13.0.0")
-    set(WASMEDGE_FLAGS WASMEDGE_CFLAGS=-Wno-error=dangling-reference)
-endif()
 
 hunter_cmake_args(
     WasmEdge
