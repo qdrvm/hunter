@@ -26,9 +26,9 @@ hunter_add_version(
     VERSION
     0.1-overflow
     URL
-    "https://github.com/turuslan/qdrvm-libsecp256k1/archive/30c830edf90c1de7000868e2891c67205b2b8804.zip"
+    "https://github.com/turuslan/qdrvm-libsecp256k1/archive/77ba2bf484e0c85ac6340bd1830322fa09d0ff37.zip"
     SHA1
-    218180a6648fad365627f936b8f250930e6a1477
+    852403b8fffc0cf4e96e6fb796741ba4a80928af
 )
 
 hunter_cmake_args(
