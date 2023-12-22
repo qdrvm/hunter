@@ -20,6 +20,17 @@ hunter_add_version(
     4ffcdc2477794ad588874975184cfa68f7e15e94
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    libsecp256k1
+    VERSION
+    0.1-overflow
+    URL
+    "https://github.com/turuslan/qdrvm-libsecp256k1/archive/30c830edf90c1de7000868e2891c67205b2b8804.zip"
+    SHA1
+    218180a6648fad365627f936b8f250930e6a1477
+)
+
 hunter_cmake_args(
     libsecp256k1
     CMAKE_ARGS
