@@ -24,11 +24,11 @@ hunter_add_version(
     PACKAGE_NAME
     libsecp256k1
     VERSION
-    0.1-overflow
+    0.1-p1
     URL
-    "https://github.com/turuslan/qdrvm-libsecp256k1/archive/77ba2bf484e0c85ac6340bd1830322fa09d0ff37.zip"
+    "https://github.com/qdrvm/soramitsu-libsecp256k1/archive/v0.1-p1.zip"
     SHA1
-    852403b8fffc0cf4e96e6fb796741ba4a80928af
+    37ca64ab00a69dde44981343b1a6444fe57fd520
 )
 
 hunter_cmake_args(
