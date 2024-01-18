@@ -195,6 +195,22 @@ function(hunter_create_cache_file cache_path)
       "set(CMAKE_POLICY_DEFAULT_CMP0069 NEW CACHE INTERNAL \"\")\n"
   )
 
+  # CMP0114 should be set to NEW to squash CMake warnings at Xcode build time,
+  # without modifying source code
+  file(
+      APPEND
+      "${temp_path}"
+      "set(CMAKE_POLICY_DEFAULT_CMP0114 NEW CACHE INTERNAL \"\")\n"
+  )
+
+  # CMP0135 should be set to NEW to squash CMake warnings at build time,
+  # without modifying source code
+  file(
+      APPEND
+      "${temp_path}"
+      "set(CMAKE_POLICY_DEFAULT_CMP0135 NEW CACHE INTERNAL \"\")\n"
+  )
+
   # Disable package registry {
   ### http://www.cmake.org/cmake/help/v3.1/manual/cmake-packages.7.html#disabling-the-package-registry
   file(

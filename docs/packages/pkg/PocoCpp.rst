@@ -12,7 +12,7 @@ PocoCpp
 
 POCO C++ Libraries
 
--  `Official <https://https://pocoproject.org>`__
+-  `Official <https://pocoproject.org>`__
 -  `Official Repository <https://github.com/pocoproject/poco>`__
 -  `Hunterized Repository <https://github.com/cpp-pm/poco>`__
 

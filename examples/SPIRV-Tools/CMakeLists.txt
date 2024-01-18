@@ -1,10 +1,11 @@
 # Copyright (c) 2016-2019, Ruslan Baratov
 # All rights reserved.
 
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 3.5)
 
 # Emulate HunterGate:
 # * https://github.com/hunter-packages/gate
+set(TESTING_CONFIG_OPT FILEPATH ${CMAKE_CURRENT_LIST_DIR}/config.cmake)
 include("../common.cmake")
 
 project(download-SPIRV-Tools)

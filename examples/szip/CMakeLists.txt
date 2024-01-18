@@ -1,7 +1,7 @@
 # Copyright (c) 2015, Oliver Daniell
 # All rights reserved.
 
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.5)
 
 # Emulate HunterGate:
 # * https://github.com/hunter-packages/gate
@@ -14,4 +14,4 @@ hunter_add_package(szip)
 find_package(szip REQUIRED)
 
 add_executable(foo foo.cpp)
-target_link_libraries(foo szip::szip)
+target_link_libraries(foo PRIVATE szip::szip)

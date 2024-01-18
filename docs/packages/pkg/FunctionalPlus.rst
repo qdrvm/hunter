@@ -9,7 +9,7 @@
 FunctionalPlus
 ==============
 
--  `Official <https://https://github.com/Dobiasd/FunctionalPlus/>`__
+-  `Official <https://github.com/Dobiasd/FunctionalPlus/>`__
 -  `Example <https://github.com/cpp-pm/hunter/blob/master/examples/FunctionalPlus/CMakeLists.txt>`__
 
 .. literalinclude:: /../examples/FunctionalPlus/CMakeLists.txt
