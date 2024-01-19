@@ -14,6 +14,12 @@ Boost
 
 -  `Example <https://github.com/cpp-pm/hunter/blob/master/examples/Boost/CMakeLists.txt>`__
 
+Since boost 1.70 you should use for header only libraries as target:
+
+.. code-block:: cmake
+
+    target_link_libraries(... Boost::headers)
+
 .. code-block:: cmake
 
     # Boost components (see list below)
@@ -88,14 +94,31 @@ config file (``boost/config/user.hpp``):
     #define BOOST_MPL_CFG_NO_PREPROCESSED_HEADERS
     #define BOOST_MPL_LIMIT_LIST_SIZE 3
 
-  - Option ``USE_CONFIG_FROM_BOOST=ON`` use the package configuration file provided 
-    by the boost project.
-    Since boost version 1.70.0, the boost project provide a well maintained package 
-    configuration file for use with find_package's config mode.
-    See the difference between following example:
-    - `Boost-log <https://github.com/cpp-pm/hunter/blob/master/examples/Boost-log/CMakeLists.txt>`__
-    - `Boost-log-usingBoostConfig <https://github.com/cpp-pm/hunter/blob/master/examples/Boost-log-usingBoostConfig/CMakeLists.txt>`__
+- Option ``USE_CONFIG_FROM_BOOST=ON`` use the package configuration file provided 
+  by the boost project.
 
+  Since boost version 1.70.0, the boost project provide a well maintained package 
+  configuration file for use with find_package's config mode. As minimum required CMake 
+  version you need 3.3.
+
+  See the difference between following example:
+  
+  - `Boost-log <https://github.com/cpp-pm/hunter/blob/master/examples/Boost-log/CMakeLists.txt>`__
+  
+  - `Boost-log-useBoostConfig <https://github.com/cpp-pm/hunter/blob/master/examples/Boost-log-useBoostConfig/CMakeLists.txt>`__
+
+- Option ``BOOST_USE_WINAPI_VERSION=<API_VERSION>`` use on Windows in order to set the Windows API version used for building the boost libraries.
+
+  Since Boost 1.78.0 Boost.Log exports additional symbols when building for Windows 8 or newer.
+  So it is recommended to set the CMake variable ``BOOST_USE_WINAPI_VERSION`` in the CMake-toolchain file (or the ``CMAKE_ARGS``) to the same value as the defines ``_WIN32_WINNT`` and ``WINVER``.
+
+  - `Boost.WinAPI documentation <https://www.boost.org/doc/libs/1_79_0/libs/winapi/doc/html/winapi/config.html>`__
+
+  The version passed must match the hexadecimal integer values used for ``_WIN32_WINNT`` and ``WINVER``.
+  The version numbers are described in
+  `Windows Headers documentation <https://docs.microsoft.com/en-us/windows/win32/winprog/using-the-windows-headers?redirectedfrom=MSDN#macros_for_conditional_declarations>`__.
+
+  ``API_VERSION`` is passed as a hexadecimal integer e.g. ``BOOST_USE_WINAPI_VERSION=0x0603`` sets the Windows API version to Windows 8.1.
 
 Python
 ------

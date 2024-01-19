@@ -17,7 +17,7 @@ Set minimum CMake version:
 
 .. code-block:: cmake
 
-  cmake_minimum_required(VERSION 3.2)
+  cmake_minimum_required(VERSION 3.5)
 
 Copy `HunterGate`_ module to your project and include it:
 
@@ -38,8 +38,8 @@ this repository** in general, see `notes`_):
   :emphasize-lines: 2, 3
 
   HunterGate(
-      URL "https://github.com/cpp-pm/hunter/archive/v0.16.15.tar.gz"
-      SHA1 "6974c2150fc0d3b09de3ad1efcbf15d360647ffa"
+      URL "https://github.com/cpp-pm/hunter/archive/v0.23.297.tar.gz"
+      SHA1 "3319fe6a3b08090df7df98dee75134d68e2ef5a3"
   )
 
 Now project can be started:
@@ -68,12 +68,12 @@ Summarize:
 .. code-block:: cmake
   :emphasize-lines: 5-6, 11
 
-  cmake_minimum_required(VERSION 3.2)
+  cmake_minimum_required(VERSION 3.5)
 
   include("cmake/HunterGate.cmake")
   HunterGate(
-      URL "https://github.com/cpp-pm/hunter/archive/v0.10.9.tar.gz"
-      SHA1 "53b198e364dc7bc8360fc545f798563229bd7e20"
+      URL "https://github.com/cpp-pm/hunter/archive/v0.23.297.tar.gz"
+      SHA1 "3319fe6a3b08090df7df98dee75134d68e2ef5a3"
   )
 
   project(Foo)

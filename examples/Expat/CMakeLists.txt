@@ -2,7 +2,7 @@
 # Copyright (c) 2015, 2016, Alexander Lamaison
 # All rights reserved.
 
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.5)
 
 # Emulate HunterGate:
 # * https://github.com/hunter-packages/gate
@@ -15,7 +15,12 @@ hunter_add_package(Expat)
 find_package(EXPAT CONFIG REQUIRED)
 
 add_executable(outline outline.c)
-target_link_libraries(outline PRIVATE EXPAT::expat)
+# Older versions may need EXPAT::expat
+if (WIN32 AND NOT MINGW)
+  target_link_libraries(outline PRIVATE expat::libexpat)
+else()
+  target_link_libraries(outline PRIVATE expat::expat)
+endif()
 
 find_package(EXPAT MODULE REQUIRED)
 

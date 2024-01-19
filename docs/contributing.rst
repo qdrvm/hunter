@@ -24,16 +24,16 @@ When contributing please follow the style guides:
 
 .. note::
 
-     The minimum version of CMake for using Hunter is ``3.0``.
+     The minimum version of CMake for using Hunter is ``3.2``.
      Please check that you're not using commands from newer versions
-     (`see documentation for 3.0 <http://www.cmake.org/cmake/help/v3.0/>`__).
+     (`see documentation for 3.2 <http://www.cmake.org/cmake/help/v3.2/>`__).
 
 .. note::
 
     Before adding or updating a package in Hunter, the package is tested.
     Tests are done to check if the source can be downloaded, built and linked.
     Head over to our
-    `repository for per package CI testing contribution <https://github.com/ingenue/hunter/branches/all?utf8=%E2%9C%93&query=pkg.>`__
+    `repository for per package CI testing contribution <https://github.com/cpp-pm/hunter-testing/branches/all?utf8=%E2%9C%93&query=pkg.>`__
     to see more.
 
 .. note::
@@ -59,7 +59,7 @@ and working correctly. Before reporting bugs please check:
 
     # CMakeLists.txt
 
-    cmake_minimum_required(VERSION 3.0)
+    cmake_minimum_required(VERSION 3.5)
     project(foo)
 
     add_executable(foo foo.cpp)

@@ -140,8 +140,8 @@ HUNTER_JOBS_NUMBER
 * Set variable to ``0`` to disable adding any flags: ``HUNTER_JOBS_NUMBER=0``
 * Defaults to maximum of two:
 
-  * `NUMBER_OF_LOGICAL_CORES <http://www.cmake.org/cmake/help/v3.11/command/cmake_host_system_information.html>`__
-  * `NUMBER_OF_PHYSICAL_CORES <http://www.cmake.org/cmake/help/v3.11/command/cmake_host_system_information.html>`__
+  * `NUMBER_OF_LOGICAL_CORES <http://www.cmake.org/cmake/help/v3.2/command/cmake_host_system_information.html>`__
+  * `NUMBER_OF_PHYSICAL_CORES <http://www.cmake.org/cmake/help/v3.2/command/cmake_host_system_information.html>`__
 
 .. _hunter run install:
 
@@ -200,14 +200,14 @@ Using two servers:
 
   set(
       HUNTER_CACHE_SERVERS
-      "https://github.com/elucideye/hunter-cache;https://github.com/ingenue/hunter-cache"
+      "https://github.com/elucideye/hunter-cache;https://github.com/cpp-pm/hunter-cache"
       CACHE
       STRING
       "Hunter cache servers"
   )
   HunterGate(URL "..." SHA1 "...")
 
-* Default: https://github.com/ingenue/hunter-cache
+* Default: https://github.com/cpp-pm/hunter-cache
 
 .. seealso::
 
