@@ -13,6 +13,17 @@ include(hunter_report_broken_package)
 include(hunter_source_subdir)
 
 hunter_add_version(
+    PACKAGE_NAME    
+    LLVM
+    VERSION 
+    "17.0.6"
+    URL
+    "https://github.com/llvm/llvm-project/archive/llvmorg-17.0.6.tar.gz"
+    SHA1
+    54b1248c4523edfbb5165249ff570bf5ab1d1daa
+)
+
+hunter_add_version(
     PACKAGE_NAME
     LLVM
     VERSION
