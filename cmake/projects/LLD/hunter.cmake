@@ -23,6 +23,17 @@ hunter_add_version(
     6e07606c50c504c7d0da387879e7db893b65381d
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    LLD
+    VERSION
+    "17.0.6"
+    URL
+    "https://github.com/llvm/llvm-project/archive/llvmorg-17.0.6.tar.gz"
+    SHA1
+    54b1248c4523edfbb5165249ff570bf5ab1d1daa
+)
+
 if(HUNTER_LLD_VERSION VERSION_GREATER 15.0.1)
     hunter_source_subdir(LLD SOURCE_SUBDIR lld)
 endif()
