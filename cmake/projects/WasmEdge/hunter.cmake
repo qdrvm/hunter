@@ -34,6 +34,13 @@ hunter_add_version(
     SHA1 9e64cf0a8020ab364eedca45f7b28c790ea34c82
 )
 
+hunter_add_version(
+    PACKAGE_NAME WasmEdge
+    VERSION 0.14.0-alpha.1-qdrvm3
+    URL  https://github.com/qdrvm/WasmEdge/archive/refs/tags/0.14.0-alpha.1-qdrvm3.zip
+    SHA1 76e2d4804959c486631fa3446e65361f7cef14e0
+)
+
 hunter_cmake_args(
     WasmEdge
     CMAKE_ARGS
