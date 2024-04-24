@@ -40,7 +40,7 @@ else()
   hunter_default_version(Boost VERSION 1.84.0)
 endif()
 
-hunter_default_version(Boost.DI VERSION 1.1.0)
+hunter_default_version(Boost.DI VERSION 1.1.0-p1)
 hunter_default_version(BoostCompute VERSION 0.5-p0)
 hunter_default_version(BoostProcess VERSION 0.5)
 hunter_default_version(BoringSSL VERSION 0.0.0-0f5ecd3a8-p0)
