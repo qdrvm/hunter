@@ -15,9 +15,9 @@ hunter_add_version(
     VERSION
     0.4.1-qdrvm1
     URL
-    "https://github.com/qdrvm/libsecp256k1/archive/5d1f35ce4cecfa749321fc081d093504a74f9cdf.zip"
+    "https://github.com/qdrvm/libsecp256k1/archive/eb16f1d764f914edef6653c76ff83222b610bf79.zip"
     SHA1
-    d453b5615312fd9b9980323bcfc98251ddeb767e
+    58ff000c8d8c905a9ff242e9ab6c6a172d9e1939
 )
 
 hunter_cmake_args(
