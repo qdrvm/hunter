@@ -13,22 +13,11 @@ hunter_add_version(
     PACKAGE_NAME
     libsecp256k1
     VERSION
-    0.1
+    0.4.1-qdrvm1
     URL
-    "https://github.com/soramitsu/soramitsu-libsecp256k1/archive/v0.1.tar.gz"
+    "https://github.com/qdrvm/libsecp256k1/archive/refs/tags/v0.4.1-qdrvm1.zip"
     SHA1
-    4ffcdc2477794ad588874975184cfa68f7e15e94
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    libsecp256k1
-    VERSION
-    0.1-p1
-    URL
-    "https://github.com/qdrvm/soramitsu-libsecp256k1/archive/v0.1-p1.zip"
-    SHA1
-    37ca64ab00a69dde44981343b1a6444fe57fd520
+    2b34abc1bdfcae185bdfbee1c71a6f27aaa5644d
 )
 
 hunter_cmake_args(
