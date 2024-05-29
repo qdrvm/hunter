@@ -19,9 +19,9 @@ hunter_add_version(
 
 hunter_add_version(
     PACKAGE_NAME qtils
-    VERSION 0.0.2-dirty
-    URL  https://github.com/qdrvm/qtils/archive/bb5f440b4aa2b0bf66eacbb27ac97ddf64cd4e5e.zip
-    SHA1 574be4af9cfd79dc530583dc1fe78571b7afa662
+    VERSION 0.0.3
+    URL  https://github.com/qdrvm/qtils/archive/refs/tags/v0.0.3.zip
+    SHA1 6554da456edce62ffe413aeaf836ad3a6753369b
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
