@@ -37,7 +37,7 @@ if(MINGW)
   # https://github.com/boostorg/build/issues/301
   hunter_default_version(Boost VERSION 1.64.0)
 else()
-  hunter_default_version(Boost VERSION 1.84.0)
+  hunter_default_version(Boost VERSION 1.85.0)
 endif()
 
 hunter_default_version(Boost.DI VERSION 1.1.0-p1)
