@@ -32,6 +32,13 @@ hunter_add_version(
     fee17b226c3132edc44711365eb5ea023c55bb1d
     )
 
+hunter_add_version(
+    PACKAGE_NAME BoringSSL
+    VERSION qdrvm1
+    URL  https://github.com/qdrvm/boringssl/archive/refs/tags/qdrvm1.zip
+    SHA1 374ec62e063a3fe6d46b4608a6d8635f45162410
+)
+
 if(MSVC)
   hunter_cmake_args(BoringSSL CMAKE_ARGS OPENSSL_NO_ASM=YES)
 endif()
