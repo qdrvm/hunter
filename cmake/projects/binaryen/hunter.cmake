@@ -43,6 +43,20 @@ hunter_add_version(
     ff287b5fca707f812e9d6dd70f6e45658536f179
 )
 
+hunter_add_version(
+    PACKAGE_NAME binaryen
+    VERSION 1.38.28-patch.2
+    URL  https://github.com/qdrvm/binaryen/archive/refs/tags/1.38.28-patch.2.zip
+    SHA1 a54b2c721f259d6856beddef20f5c66861949bb0
+)
+
+hunter_add_version(
+    PACKAGE_NAME binaryen
+    VERSION 1.38.28-patch.3
+    URL  https://github.com/qdrvm/binaryen/archive/refs/tags/1.38.28-patch.3.zip
+    SHA1 b520efa0ed39a1b198bb85163c843496d06fde44
+)
+
 hunter_cmake_args(
     binaryen
     CMAKE_ARGS
