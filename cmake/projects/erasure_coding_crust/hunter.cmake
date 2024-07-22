@@ -10,6 +10,14 @@ include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
 
+hunter_add_version(
+    PACKAGE_NAME
+    erasure_coding_crust
+    VERSION
+    0.0.7
+    URL https://github.com/qdrvm/erasure-coding-crust/archive/refs/tags/v0.0.7.zip
+    SHA1 8bcbfe83b9b1936bdae846efc02fa384232104a8
+)
 
 hunter_add_version(
     PACKAGE_NAME
