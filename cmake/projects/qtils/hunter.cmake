@@ -24,6 +24,13 @@ hunter_add_version(
     SHA1 6554da456edce62ffe413aeaf836ad3a6753369b
 )
 
+hunter_add_version(
+    PACKAGE_NAME qtils
+    VERSION 0.0.4
+    URL  https://github.com/qdrvm/qtils/archive/refs/tags/v0.0.4.zip
+    SHA1 808212b183d0de419984e1e3734523f0040ac636
+)
+
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 
 hunter_cacheable(qtils)
