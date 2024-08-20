@@ -13,11 +13,11 @@ hunter_add_version(
     PACKAGE_NAME
     libsecp256k1
     VERSION
-    0.4.1-qdrvm1
+    0.5.1
     URL
-    "https://github.com/qdrvm/libsecp256k1/archive/refs/tags/v0.4.1-qdrvm1.zip"
+    "https://github.com/qdrvm/libsecp256k1/archive/refs/tags/0.5.1.zip"
     SHA1
-    2b34abc1bdfcae185bdfbee1c71a6f27aaa5644d
+    fa6b24765235d4a729f528990ad99daeecdc517a
 )
 
 hunter_cmake_args(

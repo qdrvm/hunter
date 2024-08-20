@@ -5,9 +5,9 @@ include(hunter_pick_scheme)
 
 hunter_add_version(
     PACKAGE_NAME wabt
-    VERSION 1.0.34-qdrvm2
-    URL  https://github.com/qdrvm/wabt/archive/refs/tags/1.0.34-qdrvm2.zip
-    SHA1 54d1f9db612c694f8101e3fee2722dd24e93f7c8
+    VERSION 1.0.36
+    URL  https://github.com/qdrvm/wabt/archive/refs/tags/1.0.36.zip
+    SHA1 a7ecd25d322de990c9bd0e9fd193f4d4aeacb11a
 )
 
 hunter_cmake_args(wabt CMAKE_ARGS
