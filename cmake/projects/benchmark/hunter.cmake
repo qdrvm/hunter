@@ -32,6 +32,12 @@ hunter_add_version(
     URL "https://github.com/google/benchmark/archive/v1.2.0.tar.gz"
     SHA1 "5f26619848c59ddc354e2d51e2f196d2a6ddb189")
 
+hunter_add_version(
+    PACKAGE_NAME benchmark
+    VERSION "1.9.0"
+    URL "https://github.com/google/benchmark/archive/v1.9.0.tar.gz"
+    SHA1 "eae2482e8717f0c5ee7a3dd0d4807ceb9023d4b9")
+
 hunter_cmake_args(benchmark CMAKE_ARGS BENCHMARK_ENABLE_TESTING=OFF)
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
