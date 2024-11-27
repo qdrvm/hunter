@@ -65,6 +65,15 @@ hunter_add_version(
     SHA1 229c5566eb3a0a8c236faf14e4881f277ccd8a9c
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    erasure_coding_crust
+    VERSION
+    0.0.8
+    URL https://github.com/qdrvm/erasure-coding-crust/archive/refs/tags/v0.0.8.tar.gz
+    SHA1 6bcdb6327f5da2dcec5c70f2fa63b95a44925af0
+)
+
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(erasure_coding_crust)
 hunter_download(PACKAGE_NAME erasure_coding_crust)
