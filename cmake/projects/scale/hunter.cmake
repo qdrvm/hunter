@@ -47,6 +47,13 @@ hunter_add_version(
     SHA1 25c2321cabff72890772f8ad34d2526531be45f5
     )
 
+hunter_add_version(
+    PACKAGE_NAME scale
+    VERSION      1.1.5
+    URL  https://github.com/qdrvm/scale-codec-cpp/archive/refs/tags/v1.1.5.tar.gz
+    SHA1 531c74cb9449aaeb8747933a1496d7b6d139a08c
+    )
+
 hunter_cmake_args(
     scale
     CMAKE_ARGS
