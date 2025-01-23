@@ -220,7 +220,7 @@ hunter_add_version(
     VERSION
     "1.85.0"
     URL
-    "https://boostorg.jfrog.io/artifactory/main/release/1.85.0/source/boost_1_85_0.tar.gz"
+    "https://archives.boost.io/release/1.85.0/source/boost_1_85_0.tar.gz"
     SHA1
     509db0247aebdc15e835303ec9628b8493bc2449
 )
@@ -229,21 +229,9 @@ hunter_add_version(
     PACKAGE_NAME
     Boost
     VERSION
-    "1.85.0-gh"
-    URL
-    "https://github.com/boostorg/boost/releases/download/boost-1.85.0/boost-1.85.0-cmake.tar.gz"
-    SHA1
-    35074ab552662e096162a339b55d2e0092ef2eb2
-)
-
-
-hunter_add_version(
-    PACKAGE_NAME
-    Boost
-    VERSION
     "1.86.0"
     URL
-    "https://boostorg.jfrog.io/artifactory/main/release/1.86.0/source/boost_1_86_0.tar.gz"
+    "https://archives.boost.io/release/1.86.0/source/boost_1_86_0.tar.gz"
     SHA1
     c248c60e2ce74c77cae3f678ede2f65491c4d815
 )
@@ -252,12 +240,13 @@ hunter_add_version(
     PACKAGE_NAME
     Boost
     VERSION
-    "1.86.0-gh"
+    "1.87.0"
     URL
-    "https://github.com/boostorg/boost/releases/download/boost-1.86.0/boost-1.86.0-cmake.tar.gz"
+    "https://archives.boost.io/release/1.87.0/source/boost_1_87_0.tar.gz"
     SHA1
-    45a5acfc33defaf95f0a85957cd815a61cd28179
+    a24d29ce98037d350c7b5925e83d9e6abb9a6549
 )
+
 
 # up until 1.63 sourcefourge was used
 set(_hunter_boost_base_url "https://downloads.sourceforge.net/project/boost/boost/")
