@@ -229,11 +229,34 @@ hunter_add_version(
     PACKAGE_NAME
     Boost
     VERSION
+    "1.85.0-gh"
+    URL
+    "https://github.com/boostorg/boost/releases/download/boost-1.85.0/boost-1.85.0-cmake.tar.gz"
+    SHA1
+    35074ab552662e096162a339b55d2e0092ef2eb2
+)
+
+
+hunter_add_version(
+    PACKAGE_NAME
+    Boost
+    VERSION
     "1.86.0"
     URL
     "https://boostorg.jfrog.io/artifactory/main/release/1.86.0/source/boost_1_86_0.tar.gz"
     SHA1
     c248c60e2ce74c77cae3f678ede2f65491c4d815
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Boost
+    VERSION
+    "1.86.0-gh"
+    URL
+    "https://github.com/boostorg/boost/releases/download/boost-1.86.0/boost-1.86.0-cmake.tar.gz"
+    SHA1
+    45a5acfc33defaf95f0a85957cd815a61cd28179
 )
 
 # up until 1.63 sourcefourge was used
