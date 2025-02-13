@@ -135,6 +135,13 @@ hunter_add_version(
     SHA1 8f8e1c4725ccb0668b680d008de6a64cffa5ac6e
     )
 
+hunter_add_version(
+    PACKAGE_NAME libp2p
+    VERSION 0.1.31
+    URL  https://github.com/libp2p/cpp-libp2p/archive/refs/tags/v0.1.31.zip
+    SHA1 238556748ddeac470b74741dff281c8d6d255c40
+    )
+
 hunter_cmake_args(
     libp2p
     CMAKE_ARGS
