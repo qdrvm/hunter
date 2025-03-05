@@ -54,10 +54,20 @@ hunter_add_version(
     SHA1 531c74cb9449aaeb8747933a1496d7b6d139a08c
     )
 
+hunter_add_version(
+    PACKAGE_NAME scale
+    VERSION      2.0.0
+    URL  https://github.com/qdrvm/scale-codec-cpp/archive/refs/tags/v2.0.0.tar.gz
+    SHA1 a83f0a034693809b948451ff774aeb58462a0f96
+    )
+    
 hunter_cmake_args(
     scale
     CMAKE_ARGS
       BUILD_TESTS=OFF
+      JAM_COMPATIBLE=OFF
+      CUSTOM_CONFIG_SUPPORT=OFF
+      MAX_AGGREGATE_FIELDS=20
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
