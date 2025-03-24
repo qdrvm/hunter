@@ -26,7 +26,7 @@ What to do
   .. code-block:: cmake
 
      # Check CMake version before any commands
-     cmake_minimum_required(VERSION 3.5)
+     cmake_minimum_required(VERSION 3.12)
      
      # Load HunterGate module
      include("cmake/HunterGate.cmake")

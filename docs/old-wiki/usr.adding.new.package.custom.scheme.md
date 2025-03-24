@@ -16,7 +16,7 @@ build/Release/ios-sim
 ### 02. Test it using ExternalProject_Add
 ```bash
 > cat CMakeLists.txt
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.12)
 
 include(ExternalProject) # ExternalProject_Add
 
@@ -49,7 +49,7 @@ First, custom build scheme need to be added to `cmake/schemes` directory
 > cd ${HUNTER_ROOT}
 > cat cmake/schemes/url_sha1_ios_sim.cmake.in
 # This is configuration file, variable @SOME_VARIABLE_NAME@ will be substituted during configure_file command
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.12)
 
 # If such variables like `CMAKE_CXX_FLAGS` or `CMAKE_CXX_COMPILER` not used by scheme
 # setting `LANGUAGES` to `NONE` will speed-up build a little bit. If you have any problems/glitches
@@ -132,7 +132,7 @@ hunter_config(ios_sim VERSION 1.8.2)
 Now package ready to be used:
 ```bash
 > cat CMakeLists.txt 
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.12)
 
 include("cmake/HunterGate.cmake")
 
