@@ -78,6 +78,18 @@ hunter_add_version(
     PACKAGE_NAME
     ZLIB
     VERSION
+    "1.2.11-p2"
+    URL
+    "https://github.com/iceseer/zlib/archive/refs/heads/hunter-1.2.11.zip"
+    SHA1
+    2433a7f387aead151ffaef94dad29b8efd01d0da
+)
+
+
+hunter_add_version(
+    PACKAGE_NAME
+    ZLIB
+    VERSION
     "0.0.0-chromium-f87c2b10efb4-p0"
     URL
     "https://github.com/hunter-packages/chromium_zlib/archive/v0.0.0-f87c2b10efb4-p0.tar.gz"
