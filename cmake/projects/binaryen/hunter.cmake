@@ -57,6 +57,13 @@ hunter_add_version(
     SHA1 b520efa0ed39a1b198bb85163c843496d06fde44
 )
 
+hunter_add_version(
+    PACKAGE_NAME binaryen
+    VERSION 1.38.28-patch.4
+    URL  https://github.com/iceseer/binaryen/archive/refs/heads/fix/cmake_upd_version.zip
+    SHA1 b3e394ad3246efd8b8daf21a7b52f1f7fa3c024f
+)
+
 hunter_cmake_args(
     binaryen
     CMAKE_ARGS
