@@ -57,6 +57,13 @@ hunter_add_version(
     SHA1 b520efa0ed39a1b198bb85163c843496d06fde44
 )
 
+hunter_add_version(
+    PACKAGE_NAME binaryen
+    VERSION 1.38.28-patch.4
+    URL  https://github.com/qdrvm/binaryen/archive/refs/tags/1.38.28-patch.4.zip
+    SHA1 3b462c99fa28b347bd0ad7a51c8816913b6f860b
+)
+
 hunter_cmake_args(
     binaryen
     CMAKE_ARGS
