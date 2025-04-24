@@ -89,11 +89,22 @@ hunter_add_version(
     PACKAGE_NAME
     ZLIB
     VERSION
-    "1.3.0-p0-mac"
+    "1.3.0-p1"
     URL
-    "https://github.com/kamilsa/zlib/archive/refs/tags/v1.3.0-p0-mac.tar.gz"
+    "https://github.com/qdrvm/zlib/archive/refs/tags/v1.3.0-p1.tar.gz"
     SHA1
-    45dc03f673793b459c4e2d899876fa68011c022b
+    6d4de5de7d81f3c4984a39e938010804cbd9a618
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    ZLIB
+    VERSION
+    "1.3.0-p1-mac"
+    URL
+    "https://github.com/qdrvm/zlib/archive/refs/tags/v1.3.0-p1-mac.tar.gz"
+    SHA1
+    c39e5280f19bd5d83a68b18336aee277d3aa8dcd
 )
 
 hunter_add_version(
