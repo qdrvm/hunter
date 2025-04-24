@@ -18,6 +18,13 @@ hunter_add_version(
     SHA1 de4788a0a3c9edf46e96524a20f6dbe893f935ef
 )
 
+hunter_add_version(
+    PACKAGE_NAME lsquic
+    VERSION 4.0.9-qdrvm-2
+    URL  https://github.com/qdrvm/lsquic/archive/refs/tags/v4.0.9-qdrvm-2.zip
+    SHA1 d0281e69745c5da8e3d672d32d5046dac3a89526
+)
+
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 
 hunter_cacheable(lsquic)
